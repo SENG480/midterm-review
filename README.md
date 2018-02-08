@@ -11,7 +11,7 @@
 
 | Hints |
 |-------|
-| <ul><li><b>Views</b>:</li><ul><li>Know the two views we've covered.</li><li>Know what a view tells you (what information it provides).</li><li>Code will be in <b>Java or Python</b>.</li><li><b>No UML</b> or formal modelling language knowledge necessary, but may have to draw a diagram.</li><li>Know when (in which situation) to use a View.</li></ul><li><b>Architecture drivers</b></li><li><b>Quality attributes</b> and <b>QA Scenarios</b>.</li></ul> |
+| <ul><li><b>Views</b>:</li><ul><li>Know the two Views we've covered.</li><li>Know what information a View provides.</li><li>Code will be in <b>Java or Python</b>.</li><li><b>No UML</b> or formal modelling language knowledge necessary, but may have to draw a diagram.</li><li>Know when (in which situation) to use a View.</li></ul><li><b>Architecture drivers</b></li><li><b>Quality attributes</b> and <b>QA Scenarios</b>.</li></ul> |
   
 ---
 <br></br>
@@ -45,8 +45,8 @@
 * [SEI Behaviour Tech Report](#sei-behaviour-tech-report)
 
 ---
-<br></br>
   
+
 <!-- Begin skeleton -->
 
 ### Textbook Chapter 1
@@ -54,8 +54,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Introduction: What is Software Architecture?](https://github.com/SENG480-18/course/blob/master/lectures/1-intro.md)
-
+### Introduction: What is Software Architecture?
+[Lecture 1](https://github.com/SENG480-18/course/blob/master/lectures/1-intro.md)
 <sup>(notes go here)</sup>
 
 
@@ -64,7 +64,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Software Architecture Overview](https://github.com/SENG480-18/course/blob/master/lectures/2-arch.md)
+### Software Architecture Overview
+[Lecture 2](https://github.com/SENG480-18/course/blob/master/lectures/2-arch.md)
 
 <sup>(notes go here)</sup>
 
@@ -74,7 +75,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Reading Code](https://github.com/SENG480-18/course/blob/master/lectures/3-reading.md)
+### Reading Code
+[Lecture 3](https://github.com/SENG480-18/course/blob/master/lectures/3-reading.md)
 
 <sup>(notes go here)</sup>
 
@@ -84,7 +86,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Architecture Stakeholders and Requirements](https://github.com/SENG480-18/course/blob/master/lectures/4-req.md)
+### Architecture Stakeholders and Requirements
+[Lecture 4](https://github.com/SENG480-18/course/blob/master/lectures/4-req.md)
 
 <sup>(notes go here)</sup>
 
@@ -94,7 +97,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Views on Architecture - Modules](https://github.com/SENG480-18/course/blob/master/lectures/5-modules.md)
+### Views on Architecture - Modules
+[Lecture 5](https://github.com/SENG480-18/course/blob/master/lectures/5-modules.md)
 
 <sup>(notes go here)</sup>
 
@@ -109,7 +113,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Views on Architecture - Component and Connector](https://github.com/SENG480-18/course/blob/master/lectures/6-cc.md)
+### Views on Architecture - Component and Connector
+[Lecture 6](https://github.com/SENG480-18/course/blob/master/lectures/6-cc.md)
 
 <sup>(notes go here)</sup>
 
@@ -124,7 +129,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Architecture and Design](https://github.com/SENG480-18/course/blob/master/lectures/7-design.md)
+### Architecture and Design
+[Lecture 7](https://github.com/SENG480-18/course/blob/master/lectures/7-design.md)
 
 <sup>(notes go here)</sup>
 
@@ -134,7 +140,8 @@
 <sup>(notes go here)</sup>
 
 
-### [Documenting Behaviour](https://github.com/SENG480-18/course/blob/master/lectures/8-behavior.md)
+### Documenting Behaviour
+[Lecture 8](https://github.com/SENG480-18/course/blob/master/lectures/8-behavior.md)
 
 <sup>(notes go here)</sup>
 
