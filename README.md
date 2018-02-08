@@ -3,7 +3,7 @@
 
 <h3 align="center">In class - February 26</h3>
 
-<br></br>
+<br><br>
 
 | Format |
 | ------ |
@@ -14,7 +14,8 @@
 | <ul><li><b>Views</b>:</li><ul><li>Know the two Views we've covered.</li><li>Know what information a View provides.</li><li>Code will be in <b>Java or Python</b>.</li><li><b>No UML</b> or formal modelling language knowledge necessary, but may have to draw a diagram.</li><li>Know when (in which situation) to use a View.</li></ul><li><b>Architecture drivers</b></li><li><b>Quality attributes</b> and <b>QA Scenarios</b>.</li></ul> |
   
 ---
-<br></br>
+
+<br><br>
   
 
 ## Table of Contents
