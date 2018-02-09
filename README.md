@@ -47,7 +47,6 @@
 
 ---
   
-
 <!-- Begin skeleton -->
 
 ### Textbook Chapter 1
@@ -57,6 +56,7 @@
 
 ### Introduction: What is Software Architecture?
 [Lecture 1](https://github.com/SENG480-18/course/blob/master/lectures/1-intro.md)
+
 <sup>(notes go here)</sup>
 
 
