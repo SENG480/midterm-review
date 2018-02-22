@@ -90,7 +90,7 @@ There are three main modes for creating a software model:
 >* Systems have many (many) structures. We need to filter the ones we really care about.
 >* No *single* structure is the architecture.
 >* Every system has an architecture, which may be more or less visible in the docs.
-* We can only define whether an architecture (i.e. set of structures) is "good" or not by understanding how well it meets its quality requirements and ultimate business goals.
+>* We can only define whether an architecture (i.e. set of structures) is "good" or not by understanding how well it meets its quality requirements and ultimate business goals.
 
 ### Textbook Chapter 2
 
