@@ -57,8 +57,40 @@
 ### Introduction: What is Software Architecture?
 [Lecture 1](https://github.com/SENG480-18/course/blob/master/lectures/1-intro.md)
 
-<sup>(notes go here)</sup>
+**Every system has an architecture.**
 
+"The software architecture of a system is the set of structures needed to reason about the system, which comprise the software elements, relations among them, and properties of both.""
+
+**Why do we care?**
+
+We identify 7 main benefits of a clearly defined software architecture:
+
+1. **Divide and conquer the problem** - Architecture shows us how to transition up and down the abstraction hierarchy (system purposes down to individual lines of code).
+2. **Help manage tasks and facilitate collaboration** - The architecture helps us figure out who does what.
+3. **A common language for the system** - We establish and reuse styles, patterns, and syntax (like UML)
+4. **Force us to look beyond "function" and into qualities**.
+5. **Connect business goals to actual software implementation**.
+6. **Avoid high-cost mistakes** - by focusing on the "difficult" decisions.
+7. **The best architectures create options** - The "Architectural Runway" consists of the existing code, components, and technical infrastructure needed to implement near-term features without excessive redesign and delay. It provides the necessary technical foundation for developing business initiatives and implementing new Features and/or Capabilities.
+
+#### Why We Document
+
+Software models are useful abstractions for reasoning about the system when the real world system is too complex to be easily reasoned with.
+
+There are three main modes for creating a software model:
+
+1. **Diagram as Sketch** - Sketches are usually only useful in a specific context.  Often, sketches alone will not contain enough information/context to accurately and meaningfully portray a system or some aspect thereof.  Sketches are typically short-term communication tools.
+
+2. **Diagram as Blueprint** - Blueprints are built specifically to be **handed off** to downstream users (analogous with civil engineer handing off building blueprints to general contractor).  Blueprints are meant to be precise and unambiguous.
+
+3. **Diagram as Executable** - This is most common where there are tight constraints on safety or security, such as in automotive software.  In this mode we may use a **code-generation** tool like [Simulink](https://www.mathworks.com/products/simulink.html) to draw block diagrams which a built-in compiler can then translate into **C** code.
+
+>**Implications of documentation**
+>
+>* Systems have many (many) structures. We need to filter the ones we really care about.
+>* No *single* structure is the architecture.
+>* Every system has an architecture, which may be more or less visible in the docs.
+* We can only define whether an architecture (i.e. set of structures) is "good" or not by understanding how well it meets its quality requirements and ultimate business goals.
 
 ### Textbook Chapter 2
 
