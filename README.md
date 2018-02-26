@@ -7,12 +7,8 @@
 
 | Format |
 | ------ |
-| <ul><li><b>80 minutes</b></li><li><b>Open book</b> - paper only (photocopy or hard copy of book).</li><li><b>Coverage:</b> All [lecture notes and listed readings](https://github.com/SENG480-18/course) up to February 5<sup>th</sup> inclusive</li><li><b>Four questions, choose one from each:</b></li><ul><li><b>Read code and interpret diagrams</b></li><li><b>Business cases</b> - "This is company X, these are their business goals" - produce QA and QAS's that demonstrate how the software meets the business goals.</li></ul></ul>|
+| <ul><li><b>80 minutes</b></li><li><b>Open book</b> - paper only (photocopy or hard copy of book).</li><li><b>Coverage:</b> All [lecture notes and listed readings](https://github.com/SENG480-18/course) up to February 5<sup>th</sup> inclusive.</li><li><b>Four long answer questions, choose one from each:</b></li><ol><li><b>Read code (Java or Python) and interpret diagrams (UML with key)</b></li><li><b>Business cases</b> - "This is company X, these are their business goals" - produce QA and QAS's that demonstrate how the software meets the business goals.</li></ol><li><b>You should know:</b><ul><li>Business rules</li><li>Architecture drivers</li><li>Quality attributes and scenarios</li><li>Views: Module & Component-and-Connector</li><li>Behaviour Models</li></li></ul>|
 
-| Hints |
-|-------|
-| <ul><li><b>Views</b>:</li><ul><li>Know the two Views we've covered.</li><li>Know what information a View provides.</li><li>Code will be in <b>Java or Python</b>.</li><li><b>No UML</b> or formal modelling language knowledge necessary, but may have to draw a diagram.</li><li>Know when (in which situation) to use a View.</li></ul><li><b>Architecture drivers</b></li><li><b>Quality attributes</b> and <b>QA Scenarios</b>.</li></ul> |
-  
 ---
 
 <br><br>
@@ -46,7 +42,7 @@
 * [SEI Behaviour Tech Report](#sei-behaviour-tech-report)
 
 ---
-  
+
 <!-- Begin skeleton -->
 
 ### Textbook Chapter 1
@@ -59,7 +55,7 @@
 
 **Every system has an architecture.**
 
-"The software architecture of a system is the set of structures needed to reason about the system, which comprise the software elements, relations among them, and properties of both.""
+"The software architecture of a system is the set of structures needed to reason about the system, which comprise the software elements, relations among them, and properties of both."
 
 **Why do we care?**
 
@@ -73,25 +69,6 @@ We identify 7 main benefits of a clearly defined software architecture:
 6. **Avoid high-cost mistakes** - by focusing on the "difficult" decisions.
 7. **The best architectures create options** - The "Architectural Runway" consists of the existing code, components, and technical infrastructure needed to implement near-term features without excessive redesign and delay. It provides the necessary technical foundation for developing business initiatives and implementing new Features and/or Capabilities.
 
-#### Why We Document
-
-Software models are useful abstractions for reasoning about the system when the real world system is too complex to be easily reasoned with.
-
-There are three main modes for creating a software model:
-
-1. **Diagram as Sketch** - Sketches are usually only useful in a specific context.  Often, sketches alone will not contain enough information/context to accurately and meaningfully portray a system or some aspect thereof.  Sketches are typically short-term communication tools.
-
-2. **Diagram as Blueprint** - Blueprints are built specifically to be **handed off** to downstream users (analogous with civil engineer handing off building blueprints to general contractor).  Blueprints are meant to be precise and unambiguous.
-
-3. **Diagram as Executable** - This is most common where there are tight constraints on safety or security, such as in automotive software.  In this mode we may use a **code-generation** tool like [Simulink](https://www.mathworks.com/products/simulink.html) to draw block diagrams which a built-in compiler can then translate into **C** code.
-
->**Implications of documentation**
->
->* Systems have many (many) structures. We need to filter the ones we really care about.
->* No *single* structure is the architecture.
->* Every system has an architecture, which may be more or less visible in the docs.
->* We can only define whether an architecture (i.e. set of structures) is "good" or not by understanding how well it meets its quality requirements and ultimate business goals.
-
 ### Textbook Chapter 2
 
 <sup>(notes go here)</sup>
@@ -100,7 +77,27 @@ There are three main modes for creating a software model:
 ### Software Architecture Overview
 [Lecture 2](https://github.com/SENG480-18/course/blob/master/lectures/2-arch.md)
 
-<sup>(notes go here)</sup>
+#### Why We Document
+
+* Software models are useful abstractions for reasoning about the system when the real world system is too complex to be easily reasoned with.
+
+* **Implications of documentation:**
+
+    * Systems have many (many) structures. We need to filter the ones we really care about.
+    * No *single* structure is the architecture.
+    * Every system has an architecture, which may be more or less visible in the documentation.
+    * We can only define whether an architecture (i.e. set of structures) is "good" or not by understanding how well it meets its quality requirements and ultimate business goals.
+
+
+#### Software Models
+
+There are three main modes for creating a software model:
+
+1. **Diagram as Sketch** - Sketches are usually only useful in a specific context.  Often, sketches alone will not contain enough information/context to accurately and meaningfully portray a system or some aspect thereof.  Sketches are typically short-term communication tools.
+
+2. **Diagram as Blueprint** - Blueprints are built specifically to be **handed off** to downstream users (analogous with civil engineer handing off building blueprints to general contractor).  Blueprints are meant to be precise and unambiguous.
+
+3. **Diagram as Executable** - This is most common where there are tight constraints on safety or security, such as in automotive software.  In this mode we may use a **code-generation** tool like [Simulink](https://www.mathworks.com/products/simulink.html) to draw block diagrams which a built-in compiler can then translate into **C** code.
 
 
 ### Textbook Chapter 3
@@ -122,7 +119,25 @@ There are three main modes for creating a software model:
 ### Architecture Stakeholders and Requirements
 [Lecture 4](https://github.com/SENG480-18/course/blob/master/lectures/4-req.md)
 
-<sup>(notes go here)</sup>
+Software in itself is not important, and cannot be measured for quality/satisfiability without recognizing **who the system is *for*** - these are the stakeholders.
+
+The following table will serve as our template for identifying and describing stakeholders:
+
+| Role | Concerns | Instances |
+|-----|----------|-----------|
+| Acquirers |   Oversee the procurement of the system or product | |
+| Assessors |   Oversee the system’s conformance to standards and legal regulation | |
+| Communicators |   Explain the system to other stakeholders via its documentation and training materials | |
+| Developers |  Construct and deploy the system from specifications (or lead the teams that do this) | |
+| Maintainers | Manage the evolution of the system once it is operational | |
+| Production  Engineers |   Design, deploy, and manage the hardware and software environments in which the system will be built, tested,  and run | |
+| Suppliers |   Build and/or supply the hardware, software, or infrastructure on which the system will run | |
+| Support  Staff |  Provide support to users for the product or system when it is running | |
+| System | Administrators   Run the system once it has been deployed | |
+| Testers | Test the system to ensure that it is suitable for use | |
+| Users |   Define the system’s functionality and ultimately make use of it | |
+
+
 
 
 ### Textbook Chapter 18
@@ -179,3 +194,29 @@ There are three main modes for creating a software model:
 <sup>(notes go here)</sup>
 
 <!-- End skeleton -->
+
+
+### Notes:
+
+#### Business rules
+
+<sup>(notes go here)</sup>
+
+#### Architecture drivers
+
+<sup>(notes go here)</sup>
+
+
+#### Quality attributes and scenarios
+
+<sup>(notes go here)</sup>
+
+#### Views: Module & Component-and-Connector
+
+<sup>(notes go here)</sup>
+
+#### Behaviour Models
+
+<sup>(notes go here)</sup>
+
+
